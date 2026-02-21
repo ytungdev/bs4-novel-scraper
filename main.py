@@ -192,8 +192,6 @@ class BookScrapper(Scrapper):
 
         title = soup.find('div', {'class': 'name'}).text
         content = soup.find('div', {'class': 'content'}).text
-        # <div class="name">《醉酒之後（1v1H）》1、跟夢裡一樣大</div>
-
         # write chapter.txt
         # with open(filename, 'w', newline='', encoding='utf-8') as file:
         #     file.write(f"{str(title)}\n\n")
